@@ -21,3 +21,10 @@ this program helps calculate the maximum money that can be robbed from different
 - **robber class (abstract)**: this is an abstract class with an unimplemented method `robbingclass()`.
 - **testinterface interface**: this interface has some machine learning methods and an abstract class `javaprofessionalrobber`, which is extended by `javaprofessionalrobber1`.
 - **javaprofessionalrobber1 class**: this class implements the robbery logic for different house types and calculates the maximum money that can be robbed using dynamic programming.
+
+  ## for the first program we are using interface to help display balance and interest rate for three different banks. second program involves
+## find the first "peak" by looping through the list until the tower height stops increasing. water before this is not collected 
+## for all towers:
+## if the height of the subsequent tower decreases or stays the same, add water to a "potential collection" bucket, equal to the difference between the tower height and the previous max tower height.
+## If the height of the subsequent tower increases, we collect water from the previous bucket (subtract from the "potential collection" bucket and add to the collected bucket) and also add water to the potential bucket equal to the difference between the tower height and the previous max tower height.
+## If we find a new max tower, then all the "potential water" is moved into the collected bucket and this becomes the new max tower height.
