@@ -28,3 +28,42 @@ this program helps calculate the maximum money that can be robbed from different
 ## if the height of the subsequent tower decreases or stays the same, add water to a "potential collection" bucket, equal to the difference between the tower height and the previous max tower height.
 ## If the height of the subsequent tower increases, we collect water from the previous bucket (subtract from the "potential collection" bucket and add to the collected bucket) and also add water to the potential bucket equal to the difference between the tower height and the previous max tower height.
 ## If we find a new max tower, then all the "potential water" is moved into the collected bucket and this becomes the new max tower height.
+
+
+
+Coin Change & Coffee Shop Simulation
+
+This repository contains two distinct problems solved using multithreading concepts in Java:
+
+Part A: Coin Change Problem with Multithreading
+
+Description
+The Coin Change Problem involves determining the number of ways to make a specific sum using a set of coin denominations. The solution is implemented recursively, and multithreading is used to divide the work into multiple tasks, improving performance for large inputs.
+
+Recursive Solution: The countWays() method recursively computes the number of ways to make a given sum using the available coins.
+Multithreading: The calculateCombinations() method splits the work into multiple threads using Java's ExecutorService. Each thread calculates the number of ways for a specific chunk of coins, which are then combined to get the final result.
+Example
+Input:
+Coins: {1, 2, 3}
+Sum: 4
+Output:
+Number of ways to make sum 4: 4
+Input:
+Coins: {2, 5, 3, 6}
+Sum: 10
+Output:
+Number of ways to make sum 10: 5
+How to Run:
+Clone this repository.
+Navigate to the CoinChange class in your preferred Java IDE or command line.
+Run the main() method to see the results.
+Part B: Coffee Shop Simulation with Multithreading
+
+Description
+This program simulates a coffee shop where two threads interact:
+
+A barista (producer) prepares coffee cups and adds them to a shared counter.
+A customer (consumer) picks up the coffee from the counter.
+A synchronization mechanism (using wait() and notify()) ensures that the barista and customer do not interact incorrectly, such as when the counter is full or empty.
+Barista (Producer): The barista prepares a maximum of 5 cups of coffee, adding them to a counter with a fixed capacity of 3.
+Customer (Consumer): The customer picks up coffee from the counter and waits if no coffee is available.
