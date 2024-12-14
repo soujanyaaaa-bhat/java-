@@ -67,3 +67,47 @@ A customer (consumer) picks up the coffee from the counter.
 A synchronization mechanism (using wait() and notify()) ensures that the barista and customer do not interact incorrectly, such as when the counter is full or empty.
 Barista (Producer): The barista prepares a maximum of 5 cups of coffee, adding them to a counter with a fixed capacity of 3.
 Customer (Consumer): The customer picks up coffee from the counter and waits if no coffee is available.
+
+
+
+
+
+
+
+
+
+
+
+This program simulates a menu-driven application designed to manage customer data, products, and orders using basic data structures in Java. It allows users to add customers, products, and orders, and then interact with these elements using different data structures like LinkedList, HashSet, HashMap, and TreeSet. The data structures are used to store and manipulate information efficiently.
+
+The system is designed to:
+
+Register customers with loyalty points.
+Add products with prices.
+Place orders by associating customers with products and setting order dates and delivery dates.
+Use various data structures for dynamic storage, fast retrieval, and sorting:
+LinkedList: Stores customer, product, and order lists.
+HashSet: Ensures unique IDs for customers and products.
+HashMap: Associates customers with products.
+TreeSet: Sorts products by price, customers by loyalty points, and orders by delivery date.
+Features
+Customer Management:
+Add customers with unique customer IDs, names, and loyalty points.
+Product Management:
+Add products with unique product IDs, names, and prices.
+Order Management:
+Place orders by linking customers and products, and track order dates and delivery dates.
+Data Structures:
+LinkedList to store dynamic lists of customers, products, and orders.
+HashSet to store unique customer and product IDs.
+HashMap to associate customers with products.
+TreeSet to sort customers by loyalty points, products by price, and orders by delivery date.
+How to Use
+Input Data:
+The program will prompt you to input customer, product, and order details interactively via the console.
+For each customer, product, and order, you'll enter an ID, name/description, and other relevant details (such as price, loyalty points, or dates).
+Displaying Information:
+After input, the program will display the customers, products, and orders you entered.
+It will also show the use of each data structure:
+Customers and products are stored uniquely using HashSet.
+Products are sorted by price, customers by loyalty points
